@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mensaje de Amor</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+        body {
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #ff4d4d; /* Color de fondo del cuerpo */
+        font-family: 'Arial', sans-serif;
+        color: #fff; /* Color del texto */
+        text-align: center;
+        }
+
+        .corazon {
+        width: 100px;
+        height: 90px;
+        position: relative;
+        }
+
+        .corazon::before,
+        .corazon::after {
+        content: '\2764'; /* Código Unicode para el símbolo de corazón ❤️ */
+        font-size: 80px;
+        color: #fff; /* Color del corazón */
+        position: absolute;
+        top: 0;
+        }
+
+        .corazon::before {
+        left: -50px;
+        }
+
+        .corazon::after {
+        left: 0;
+        }
+
+        h1 {
+        font-size: 1.5em; /* Tamaño del texto */
+        margin: 0; /* Elimina el margen predeterminado del párrafo */
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="corazon">
+        <h1>Te amo con todo mi corazón</h1>
+    </div>
+
+</body>
+
+</html>

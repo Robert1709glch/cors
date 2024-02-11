@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Día del Amor</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f7f7f7;
+        }
+
+        .heart-container {
+            position: relative;
+            width: 200px;
+            height: 200px;
+        }
+
+        .heart {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #e60000;
+            clip-path: url(#heartClip);
+            transform: rotate(-45deg);
+            animation: heartbeat 1s infinite;
+        }
+
+        p {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: white;
+            font-family: 'Arial', sans-serif;
+            font-size: 20px;
+        }
+
+        @keyframes heartbeat {
+
+            0%,
+            100% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.1);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="heart-container">
+        <svg height="0" width="0">
+            <defs>
+                <clipPath id="heartClip">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M100 187.205L20.7946 108L2 126.794L100 224.794L198 126.794L179.205 108L100 187.205Z"
+                        fill="#fff" />
+                </clipPath>
+            </defs>
+        </svg>
+        <div class="heart"></div>
+        <p>¡Feliz Día del Amor!</p>
+    </div>
+</body>
+
+</html>
